@@ -1,3 +1,4 @@
+import main from './main'
 import first from './first'
 
 export interface Options {
@@ -6,6 +7,7 @@ export interface Options {
 }
 
 export const second = (options: Options): void => {
+  main(options)
   first(options)
   console.log('second:', options.name, options.age)
 }
